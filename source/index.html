@@ -10,27 +10,39 @@
 
 <body class="page__body">
   <header class="page__header main-header">
-    <div class="main-header__logo">Логотип</div>
+    <a class="main-header__logo-link">
+      <img class="main-header__logo" src="#" alt="Логотип сайта Седона">
+    </a>
     <nav class="main-header__nav">
       <ul class="main-header__menu-navigation">
-        <li class="main-header__menu-item">Главная</li>
-        <li class="main-header__menu-item">О Седоне</li>
-        <li class="main-header__menu-item">Гостиницы</li>
+        <li class="main-header__menu-item"><a class="main-header__menu-link" href="#">Главная</a></li>
+        <li class="main-header__menu-item"><a class="main-header__menu-link" href="#">О Седоне</a></li>
+        <li class="main-header__menu-item"><a class="main-header__menu-link" href="#">Гостиницы</a></li>
       </ul>
       <ul class="main-header__user-navigation">
-        <li class="main-header__user-item">Поиск гостиницы</li>
-        <li class="main-header__user-item">Избранное</li>
-        <li class="main-header__user-item">Хочу сюда</li>
+        <li class="main-header__user-item">
+          <button class="main-header__user-button" type="button">Поиск гостиницы</button>
+        </li>
+        <li class="main-header__user-item">
+          <button class="main-header__user-button" type="button">Избранное<span
+              class="main-header__user-number">12</span></button>
+        </li>
+        <li class="main-header__user-item">
+          <button class="main-header__user-button" type="button">Хочу сюда</button>
+        </li>
       </ul>
     </nav>
   </header>
   <main class="page__main main-content">
     <section class="main-content__hero hero">
       <h1 class="visually-hidden">Сайт для бронирования гостиницы в городе Седона</h1>
-      <div class="hero__banner"></div>
+      <div class="hero__banner">
+        <img class="hero__logo" src="#" alt="Логотип с надписью: Добро пожаловать в Седону">
+      </div>
       <div class="hero__text-wrapper">
         <p class="hero__slogan">Седона — небольшой городок в Аризоне, заслуживающий большего!</p>
-        <p class="hero__text">Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!</p>
+        <p class="hero__text">Рассмотрим причины, по которым Седона круче, чем
+          Гранд-Каньон!</p>
       </div>
     </section>
     <section class="main-content__advantages advantages">
@@ -94,33 +106,30 @@
       <p class="search__slogan">Заинтересовались?</p>
       <p class="search__text">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне
       </p>
-      <a href="#" class="search__link">Поиск гостиницы в Седоне</a>
+      <button class="search__button" type="button">Поиск гостиницы в Седоне</button>
     </section>
     <section class="main-content__subscribe subscribe">
       <h2 class="visually-hidden">Подписка</h2>
       <p class="subscribe__intro">Подпишитесь на рассылку</p>
       <p class="subscribe__text">Только полезная информация и никакого спама, честное бойскаутское!</p>
       <form class="subscribe__form" method="POST" action="https://echo.htmlacademy.ru/echo">
-        <label class="visually-hidden">Ваш email
-          <input class="subscribe__input" type="email" id="email-input">
-        </label>
+        <label class="visually-hidden" for="email-input">Ваш email</label>
+        <input class="subscribe__input" type="email" id="email-input" name="email" required placeholder="Ваш email">
         <button class="subscribe__submit" type="submit">Подписаться</button>
       </form>
     </section>
   </main>
   <footer class="page__footer main-footer">
     <h2 class="visually-hidden">Контакты</h2>
-    <ul class="main-footer__social-links">
-      <li class="main-footer__social-link">VK</li>
-      <li class="main-footer__social-link">Telegram</li>
-      <li class="main-footer__social-link">Youtube</li>
+    <ul class="main-footer__social-list">
+      <li class="main-footer__social-item"><a class="main-footer__social-link" href="#">VK</a></li>
+      <li class="main-footer__social-item"><a class="main-footer__social-link" href="#">Telegram</a></li>
+      <li class="main-footer__social-item"><a class="main-footer__social-link" href="#">Youtube</a></li>
     </ul>
-    <address class="main-footer__phone">
-      +7 (812) 812-12-12
-    </address>
-    <div class="main-footer__logo">
-      htmlacademy.ru
-    </div>
+    <a class="main-footer__phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
+    <a class="main-footer__link" href="https://htmlacademy.ru/">
+      <img class="main-footer__logo" src="#" alt="Логотип html academy">
+    </a>
   </footer>
 </body>
 
