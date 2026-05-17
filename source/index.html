@@ -5,30 +5,32 @@
   <meta charset="UTF-8">
   <title>Седона - главная страница</title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="...">
+  <meta name="keywords" content="...">
   <link rel="stylesheet" href="styles/styles.css">
 </head>
 
 <body class="page__body">
   <header class="page__header main-header">
-    <a class="main-header__logo-link">
-      <img class="main-header__logo" src="#" alt="Логотип сайта Седона">
+    <a class="main-header__logo logo" href="#">
+      <img class="logo__image" src="#" alt="Логотип сайта Седона">
     </a>
-    <nav class="main-header__nav">
-      <ul class="main-header__menu-navigation">
-        <li class="main-header__menu-item"><a class="main-header__menu-link" href="#">Главная</a></li>
-        <li class="main-header__menu-item"><a class="main-header__menu-link" href="#">О Седоне</a></li>
-        <li class="main-header__menu-item"><a class="main-header__menu-link" href="#">Гостиницы</a></li>
+    <nav class="main-header__navigation navigation">
+      <ul class="navigation__list">
+        <li class="navigation__item"><a class="navigation__link" href="#">Главная</a></li>
+        <li class="navigation__item"><a class="navigation__link" href="#">О Седоне</a></li>
+        <li class="navigation__item"><a class="navigation__link" href="#">Гостиницы</a></li>
       </ul>
-      <ul class="main-header__user-navigation">
-        <li class="main-header__user-item">
-          <button class="main-header__user-button" type="button">Поиск гостиницы</button>
+      <ul class="navigation__list user-navigation">
+        <li class="user-navigation__item">
+          <a class="user-navigation__link button" href="#"><span class="visually-hidden">Поиск гостиницы</span></a>
         </li>
-        <li class="main-header__user-item">
-          <button class="main-header__user-button" type="button">Избранное<span
-              class="main-header__user-number">12</span></button>
+        <li class="user-navigation__item">
+          <a class="user-navigation__link button" href="#"><span class="visually-hidden">Избранное</span><span
+              class="user-navigation__amount">12</span></a>
         </li>
-        <li class="main-header__user-item">
-          <button class="main-header__user-button" type="button">Хочу сюда</button>
+        <li class="user-navigation__item">
+          <a class="user-navigation__link button" href="#">Хочу сюда!</a>
         </li>
       </ul>
     </nav>
@@ -48,11 +50,12 @@
     <section class="main-content__advantages advantages">
       <h2 class="visually-hidden">Преимущества</h2>
       <ul class="advantages__list">
-        <li class="advantages__item">
+        <li class="advantages__item advantages__item--wide">
           <h3 class="advantages__title">
             Настоящий городок
           </h3>
           <p class="advantages__text">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
+          <img class="advantages__image" src="#" alt="Город Седона">
         </li>
         <li class="advantages__item">
           <h3 class="advantages__title">
@@ -72,11 +75,12 @@
           </h3>
           <p class="advantages__text">Большинство едет в Гранд Каньон и толпится там</p>
         </li>
-        <li class="advantages__item">
+        <li class="advantages__item advantages__item--wide advantages__item--reverse">
           <h3 class="advantages__title">
             Там есть мост дьявола
           </h3>
           <p class="advantages__text">Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
+          <img class="advantages__image" src="#" alt="Мост дьявола">
         </li>
       </ul>
     </section>
@@ -121,10 +125,10 @@
   </main>
   <footer class="page__footer main-footer">
     <h2 class="visually-hidden">Контакты</h2>
-    <ul class="main-footer__social-list">
-      <li class="main-footer__social-item"><a class="main-footer__social-link" href="#">VK</a></li>
-      <li class="main-footer__social-item"><a class="main-footer__social-link" href="#">Telegram</a></li>
-      <li class="main-footer__social-item"><a class="main-footer__social-link" href="#">Youtube</a></li>
+    <ul class="main-footer__social-list social">
+      <li class="social__item"><a class="social__link" href="#">VK</a></li>
+      <li class="social__item"><a class="social__link" href="#">Telegram</a></li>
+      <li class="social__item"><a class="social__link" href="#">Youtube</a></li>
     </ul>
     <a class="main-footer__phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
     <a class="main-footer__link" href="https://htmlacademy.ru/">
