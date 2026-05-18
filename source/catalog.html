@@ -15,22 +15,23 @@
     <a class="main-header__logo logo" href="index.html">
       <img class="logo__image" src="#" alt="Логотип сайта Седона">
     </a>
-    <nav class="main-header__navigation navigation">
+    <nav class="main-header__navigation" aria-label="Основная навигация">
       <ul class="navigation__list">
         <li class="navigation__item"><a class="navigation__link" href="index.html">Главная</a></li>
         <li class="navigation__item"><a class="navigation__link" href="#">О Седоне</a></li>
-        <li class="navigation__item"><a class="navigation__link navigation__link--current" href="#">Гостиницы</a></li>
+        <li class="navigation__item"><a class="navigation__link navigation__link--current" href="#"
+            aria-current="page">Гостиницы</a></li>
       </ul>
-      <ul class="navigation__list user-navigation">
-        <li class="user-navigation__item">
-          <a class="user-navigation__link button" href="#"><span class="visually-hidden">Поиск гостиницы</span></a>
+      <ul class="navigation__list navigation-user">
+        <li class="navigation__item">
+          <a class="navigation__link button" href="#"><span class="visually-hidden">Поиск гостиницы</span></a>
         </li>
-        <li class="user-navigation__item">
-          <a class="user-navigation__link button" href="#"><span class="visually-hidden">Избранное</span><span
-              class="user-navigation__amount">12</span></a>
+        <li class="navigation__item">
+          <a class="navigation__link button" href="#"><span class="visually-hidden">Избранное</span><span
+              class="navigation__amount">12</span></a>
         </li>
-        <li class="user-navigation__item">
-          <a class="user-navigation__link button" href="#">Хочу сюда!</a>
+        <li class="navigation__item">
+          <a class="navigation__link button" href="#">Хочу сюда!</a>
         </li>
       </ul>
     </nav>
@@ -38,14 +39,16 @@
   <main class="page__main main-catalog">
     <header class="main-catalog__header catalog-header">
       <h1 class="catalog-header__title">Гостиницы Седоны</h1>
-      <ol class="catalog-header__breadcrumbs breadcrumbs">
-        <li class="breadcrumbs__item">
-          <a class="breadcrumbs__link" href="index.html"><span class="visually-hidden">Главная</span></a>
-        </li>
-        <li class="breadcrumbs__item">
-          <a class="breadcrumbs__link breadcrumbs__link--current" aria-current="page">Гостиницы</a>
-        </li>
-      </ol>
+      <nav class="catalog-header__breadcrumbs breadcrumbs" aria-label="Хлебные крошки">
+        <ol class="breadcrumbs__list">
+          <li class="breadcrumbs__item">
+            <a class="breadcrumbs__link" href="index.html"><span class="visually-hidden">Главная</span></a>
+          </li>
+          <li class="breadcrumbs__item">
+            <a class="breadcrumbs__link breadcrumbs__link--current" href="#" aria-current="page">Гостиницы</a>
+          </li>
+        </ol>
+      </nav>
     </header>
     <section class="main-catalog__filter filter">
       <h2 class="visually-hidden">Фильтр гостиниц</h2>
@@ -70,17 +73,17 @@
         <fieldset class="filter__group">
           <legend class="filter__title">Тип жилья:</legend>
           <ul class="filter__list">
-            <li class="filter__item">
-              <input class="filter__input" type="radio" id="hotel" name="type-of-housing" value="hotel" checked>
-              <label class="filter__label" for="hotel">Гостиница</label>
+            <li class="filter__item control">
+              <input class="control__input" type="radio" id="hotel" name="type-of-housing" value="hotel" checked>
+              <label class="control__label" for="hotel">Гостиница</label>
             </li>
-            <li class="filter__item">
-              <input class="filter__input" type="radio" id="motel" name="type-of-housing" value="motel">
-              <label class="filter__label" for="motel">Мотель</label>
+            <li class="filter__item control">
+              <input class="control__input" type="radio" id="motel" name="type-of-housing" value="motel">
+              <label class="control__label" for="motel">Мотель</label>
             </li>
-            <li class="filter__item">
-              <input class="filter__input" type="radio" id="apartment" name="type-of-housing" value="apartment">
-              <label class="filter__label" for="apartment">Апартаменты</label>
+            <li class="filter__item control">
+              <input class="control__input" type="radio" id="apartment" name="type-of-housing" value="apartment">
+              <label class="control__label" for="apartment">Апартаменты</label>
             </li>
           </ul>
         </fieldset>
@@ -181,18 +184,20 @@
           </p>
         </li>
       </ul>
-      <ol class="products__pagination pagination">
-        <li class="pagination__item"><a class="pagination__link pagination__link--current button"
-            aria-current="page">1</a>
-        </li>
-        <li class="pagination__item"><a class="pagination__link button" href="#">2</a></li>
-        <li class="pagination__item"><a class="pagination__link button" href="#">3</a></li>
-        <li class="pagination__item"><a class="pagination__link button" href="#">4</a></li>
-        <li class="pagination__item"><span class="pagination__link button">...</span></li>
-        <li class="pagination__item"><a class="pagination__link button" href="#">10</a></li>
-      </ol>
+      <nav class="products__pagination pagination" aria-label="Пагинация">
+        <ol class="pagination__list">
+          <li class="pagination__item"><a class="pagination__link pagination__link--current button"
+              aria-current="page">1</a>
+          </li>
+          <li class="pagination__item"><a class="pagination__link button" href="#">2</a></li>
+          <li class="pagination__item"><a class="pagination__link button" href="#">3</a></li>
+          <li class="pagination__item"><a class="pagination__link button" href="#">4</a></li>
+          <li class="pagination__item"><span class="pagination__link button">...</span></li>
+          <li class="pagination__item"><a class="pagination__link button" href="#">10</a></li>
+        </ol>
+      </nav>
     </section>
-    <section class="main-content__subscribe subscribe subscribe--catalog-page">
+    <section class="main-catalog__subscribe subscribe subscribe--catalog-page">
       <h2 class="visually-hidden">Подписка</h2>
       <p class="subscribe__intro">Подпишитесь на рассылку</p>
       <p class="subscribe__text">Только полезная информация и никакого спама, честное бойскаутское!</p>
