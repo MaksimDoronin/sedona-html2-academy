@@ -11,35 +11,36 @@
 </head>
 
 <body class="page__body">
-  <header class="page__header main-header">
-    <a class="main-header__logo logo" href="#">
+  <header class="page__header header">
+    <a class="header__logo logo" href="#" aria-current="page">
       <img class="logo__image" src="#" alt="Логотип сайта Седона">
     </a>
-    <nav class="main-header__navigation navigation">
+    <nav class="header__navigation navigation" aria-label="Основная навигация">
       <ul class="navigation__list">
-        <li class="navigation__item"><a class="navigation__link navigation__link--current" href="#">Главная</a></li>
+        <li class="navigation__item"><a class="navigation__link navigation__link--current" href="#"
+            aria-current="page">Главная</a></li>
         <li class="navigation__item"><a class="navigation__link" href="#">О Седоне</a></li>
         <li class="navigation__item"><a class="navigation__link" href="catalog.html">Гостиницы</a></li>
       </ul>
-      <ul class="navigation__list user-navigation">
-        <li class="user-navigation__item">
-          <a class="user-navigation__link button" href="#"><span class="visually-hidden">Поиск гостиницы</span></a>
+      <ul class="navigation__list">
+        <li class="navigation__item">
+          <a class="navigation__link button" href="#"><span class="visually-hidden">Поиск гостиницы</span></a>
         </li>
-        <li class="user-navigation__item">
-          <a class="user-navigation__link button" href="#"><span class="visually-hidden">Избранное</span><span
-              class="user-navigation__amount">12</span></a>
+        <li class="navigation__item">
+          <a class="navigation__link button" href="#"><span class="visually-hidden">Избранное</span><span
+              class="navigation__amount">12</span></a>
         </li>
-        <li class="user-navigation__item">
-          <a class="user-navigation__link button" href="#">Хочу сюда!</a>
+        <li class="navigation__item">
+          <a class="navigation__link button" href="#">Хочу сюда!</a>
         </li>
       </ul>
     </nav>
   </header>
-  <main class="page__main main-content">
-    <section class="main-content__hero hero">
+  <main class="page__main">
+    <section class="page__hero hero">
       <h1 class="visually-hidden">Сайт для бронирования гостиницы в городе Седона</h1>
       <div class="hero__banner">
-        <img class="hero__logo" src="#" alt="Логотип с надписью: Добро пожаловать в Седону">
+        <img class="hero__logo" src="#" alt="Welcome to the gorgeous Sedona 'because the Grand Canyon sucks!">
       </div>
       <div class="hero__text-wrapper">
         <p class="hero__slogan">Седона — небольшой городок в Аризоне, заслуживающий большего!</p>
@@ -47,7 +48,7 @@
           Гранд-Каньон!</p>
       </div>
     </section>
-    <section class="main-content__advantages advantages">
+    <section class="page__advantages advantages">
       <h2 class="visually-hidden">Преимущества</h2>
       <ul class="advantages__list">
         <li class="advantages__item advantages__item--wide">
@@ -84,7 +85,7 @@
         </li>
       </ul>
     </section>
-    <section class="main-content__features features">
+    <section class="page__features features">
       <h2 class="visually-hidden">Особенности</h2>
       <div class="features__text-wrapper">
         <p class="features__slogan">Приезжайте в Седону отдохнуть в комфорте и уюте!</p>
@@ -105,14 +106,14 @@
         </li>
       </ul>
     </section>
-    <section class="main-content__search search">
+    <section class="page__search search">
       <h2 class="visually-hidden">Поиск гостиницы</h2>
       <p class="search__slogan">Заинтересовались?</p>
       <p class="search__text">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне
       </p>
       <button class="search__button" type="button">Поиск гостиницы в Седоне</button>
     </section>
-    <section class="main-content__subscribe subscribe">
+    <section class="page__subscribe subscribe">
       <h2 class="visually-hidden">Подписка</h2>
       <p class="subscribe__intro">Подпишитесь на рассылку</p>
       <p class="subscribe__text">Только полезная информация и никакого спама, честное бойскаутское!</p>
@@ -123,16 +124,16 @@
       </form>
     </section>
   </main>
-  <footer class="page__footer main-footer">
+  <footer class="page__footer footer">
     <h2 class="visually-hidden">Контакты</h2>
-    <ul class="main-footer__social-list social">
+    <ul class="footer__social-list social">
       <li class="social__item"><a class="social__link" href="#">VK</a></li>
       <li class="social__item"><a class="social__link" href="#">Telegram</a></li>
       <li class="social__item"><a class="social__link" href="#">Youtube</a></li>
     </ul>
-    <a class="main-footer__phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
-    <a class="main-footer__link" href="https://htmlacademy.ru/">
-      <img class="main-footer__logo" src="#" alt="Логотип html academy">
+    <a class="footer__phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
+    <a class="footer__link" href="https://htmlacademy.ru/">
+      <img class="footer__logo" src="#" alt="Логотип html academy">
     </a>
   </footer>
 </body>

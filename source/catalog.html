@@ -11,11 +11,11 @@
 </head>
 
 <body class="page__body">
-  <header class="page__header main-header">
-    <a class="main-header__logo logo" href="index.html">
+  <header class="page__header header">
+    <a class="header__logo logo" href="index.html">
       <img class="logo__image" src="#" alt="Логотип сайта Седона">
     </a>
-    <nav class="main-header__navigation" aria-label="Основная навигация">
+    <nav class="header__navigation navigation" aria-label="Основная навигация">
       <ul class="navigation__list">
         <li class="navigation__item"><a class="navigation__link" href="index.html">Главная</a></li>
         <li class="navigation__item"><a class="navigation__link" href="#">О Седоне</a></li>
@@ -36,8 +36,8 @@
       </ul>
     </nav>
   </header>
-  <main class="page__main main-catalog">
-    <header class="main-catalog__header catalog-header">
+  <main class="page__main">
+    <header class="page__catalog-header catalog-header">
       <h1 class="catalog-header__title">Гостиницы Седоны</h1>
       <nav class="catalog-header__breadcrumbs breadcrumbs" aria-label="Хлебные крошки">
         <ol class="breadcrumbs__list">
@@ -50,7 +50,7 @@
         </ol>
       </nav>
     </header>
-    <section class="main-catalog__filter filter">
+    <section class="page__filter filter">
       <h2 class="visually-hidden">Фильтр гостиниц</h2>
       <form class="filter__form" action="https://echo.htmlacademy.ru/" method="get">
         <fieldset class="filter__group">
@@ -96,7 +96,7 @@
         </ul>
       </form>
     </section>
-    <section class="main-catalog__products products">
+    <section class="page__products products">
       <h2 class="visually-hidden">Результаты поиска</h2>
       <div class="products__sorting sorting">
         <p class="sorting__text">Найдено гостиниц: 38</p>
@@ -106,22 +106,26 @@
       </div>
       <ul class="products__view-toggles view-toggles">
         <li class="view-toggles__item">
-          <button class="view-toggles__button view-toggles__button--active button" type="button"><span
-              class="visually-hidden">Показать в виде сетки</span></button>
+          <a class="view-toggles__link view-toggles__link--active button" href="catalog.html?view=tile"><span
+              class="visually-hidden">Показать в виде сетки</span></a>
         </li>
         <li class="view-toggles__item">
-          <button class="view-toggles__button button" type="button"><span class="visually-hidden">Показать в виде
-              карточки</span></button>
+          <a class="view-toggles__link button" href="catalog.html?view=card"><span class="visually-hidden">Показать в
+              виде
+              карточки</span></a>
         </li>
         <li class="view-toggles__item">
-          <button class="view-toggles__button button" type="button"><span class="visually-hidden">Показать в виде
-              списка</span></button>
+          <a class="view-toggles__link button" href="catalog.html?view=list"><span class="visually-hidden">Показать в
+              виде
+              списка</span></a>
         </li>
       </ul>
       <ul class="products__catalog catalog-list">
         <li class="catalog-list__item card">
-          <img class="card__image" src="#" alt="Amara Resort & Spa">
-          <h3 class="card__title">Amara Resort & Spa</h3>
+          <a class="card__link" href="#">
+            <img class="card__image" src="#" alt="Amara Resort & Spa">
+            <h3 class="card__title">Amara Resort & Spa</h3>
+          </a>
           <p class="card__info-wrapper">
             <span class="card__type">Гостиница</span>
             <span class="card__price">От 4000 ₽</span>
@@ -136,8 +140,10 @@
           </p>
         </li>
         <li class="catalog-list__item card">
-          <img class="card__image" src="#" alt="Villas at Poco Diablo">
-          <h3 class="card__title">Villas at Poco Diablo</h3>
+          <a class="card__link" href="#">
+            <img class="card__image" src="#" alt="Villas at Poco Diablo">
+            <h3 class="card__title">Villas at Poco Diablo</h3>
+          </a>
           <p class="card__info-wrapper">
             <span class="card__type">Гостиница</span>
             <span class="card__price">От 5000 ₽</span>
@@ -152,8 +158,10 @@
           </p>
         </li>
         <li class="catalog-list__item card">
-          <img class="card__image" src="#" alt="Desert Quail Inn">
-          <h3 class="card__title">Desert Quail Inn</h3>
+          <a class="card__link" href="#">
+            <img class="card__image" src="#" alt="Desert Quail Inn">
+            <h3 class="card__title">Desert Quail Inn</h3>
+          </a>
           <p class="card__info-wrapper">
             <span class="card__type">Гостиница</span>
             <span class="card__price">От 2500 ₽</span>
@@ -168,8 +176,10 @@
           </p>
         </li>
         <li class="catalog-list__item card">
-          <img class="card__image" src="#" alt="GreenTree Inn">
-          <h3 class="card__title">GreenTree Inn</h3>
+          <a class="card__link" href="#">
+            <img class="card__image" src="#" alt="GreenTree Inn">
+            <h3 class="card__title">GreenTree Inn</h3>
+          </a>
           <p class="card__info-wrapper">
             <span class="card__type">Гостиница</span>
             <span class="card__price">От 1500 ₽</span>
@@ -197,7 +207,7 @@
         </ol>
       </nav>
     </section>
-    <section class="main-catalog__subscribe subscribe subscribe--catalog-page">
+    <section class="page__subscribe subscribe subscribe--catalog-page">
       <h2 class="visually-hidden">Подписка</h2>
       <p class="subscribe__intro">Подпишитесь на рассылку</p>
       <p class="subscribe__text">Только полезная информация и никакого спама, честное бойскаутское!</p>
@@ -208,16 +218,16 @@
       </form>
     </section>
   </main>
-  <footer class="page__footer main-footer">
+  <footer class="page__footer footer">
     <h2 class="visually-hidden">Контакты</h2>
-    <ul class="main-footer__social-list social">
+    <ul class="footer__social-list social">
       <li class="social__item"><a class="social__link" href="#">VK</a></li>
       <li class="social__item"><a class="social__link" href="#">Telegram</a></li>
       <li class="social__item"><a class="social__link" href="#">Youtube</a></li>
     </ul>
-    <a class="main-footer__phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
-    <a class="main-footer__link" href="https://htmlacademy.ru/">
-      <img class="main-footer__logo" src="#" alt="Логотип html academy">
+    <a class="footer__phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
+    <a class="footer__link" href="https://htmlacademy.ru/">
+      <img class="footer__logo" src="#" alt="Логотип html academy">
     </a>
   </footer>
 </body>
