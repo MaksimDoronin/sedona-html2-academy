@@ -7,13 +7,14 @@
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <meta name="description" content="...">
   <meta name="keywords" content="...">
+  <link rel="preload" href="#" as="font" type="font/woff2">
   <link rel="stylesheet" href="styles/styles.css">
 </head>
 
 <body class="page__body">
   <header class="page__header header">
     <a class="header__logo logo" href="index.html">
-      <img class="logo__image" src="#" alt="Логотип сайта Седона">
+      <img class="logo__image" src="#" alt="Логотип сайта Седона" width="50" height="50">
     </a>
     <nav class="header__navigation navigation" aria-label="Основная навигация">
       <ul class="navigation__list">
@@ -90,17 +91,17 @@
         <fieldset class="filter__group">
           <legend class="filter__title">Стоимость, ₽:</legend>
         </fieldset>
-        <ul class="filter__actions">
-          <li class="filter__actions-item"><button class="button" type="submit">Применить</button></li>
-          <li class="filter__actions-item"><button class="button" type="reset">Сбросить</button></li>
-        </ul>
+        <div class="filter__actions">
+          <button class="filter__action button" type="submit">Применить</button>
+          <button class="filter__action button" type="reset">Сбросить</button>
+        </div>
       </form>
     </section>
     <section class="page__products products">
       <h2 class="visually-hidden">Результаты поиска</h2>
       <div class="products__sorting sorting">
         <p class="sorting__text">Найдено гостиниц: 38</p>
-        <select class="sorting__dropdown" aria-label="Сортировка">
+        <select class="sorting__dropdown" name="card-sorting" aria-label="Сортировка">
           <option value="cheap">Сначала дешёвые</option>
         </select>
       </div>
@@ -120,10 +121,10 @@
               списка</span></a>
         </li>
       </ul>
-      <ul class="products__catalog catalog-list">
-        <li class="catalog-list__item card">
+      <ul class="products__list">
+        <li class="products__item card">
           <a class="card__link" href="#">
-            <img class="card__image" src="#" alt="Amara Resort & Spa">
+            <img class="card__image" src="#" alt="Amara Resort & Spa" width="50" height="50">
             <h3 class="card__title">Amara Resort & Spa</h3>
           </a>
           <p class="card__info-wrapper">
@@ -139,9 +140,9 @@
             <span class="card__rating">Рейтинг: 8,5</span>
           </p>
         </li>
-        <li class="catalog-list__item card">
+        <li class="products__item card">
           <a class="card__link" href="#">
-            <img class="card__image" src="#" alt="Villas at Poco Diablo">
+            <img class="card__image" src="#" alt="Villas at Poco Diablo" width="50" height="50">
             <h3 class="card__title">Villas at Poco Diablo</h3>
           </a>
           <p class="card__info-wrapper">
@@ -157,9 +158,9 @@
             <span class="card__rating">Рейтинг: 9,2</span>
           </p>
         </li>
-        <li class="catalog-list__item card">
+        <li class="products__item card">
           <a class="card__link" href="#">
-            <img class="card__image" src="#" alt="Desert Quail Inn">
+            <img class="card__image" src="#" alt="Desert Quail Inn" width="50" height="50">
             <h3 class="card__title">Desert Quail Inn</h3>
           </a>
           <p class="card__info-wrapper">
@@ -175,9 +176,9 @@
             <span class="card__rating">Рейтинг: 6,9</span>
           </p>
         </li>
-        <li class="catalog-list__item card">
+        <li class="products__item card">
           <a class="card__link" href="#">
-            <img class="card__image" src="#" alt="GreenTree Inn">
+            <img class="card__image" src="#" alt="GreenTree Inn" width="50" height="50">
             <h3 class="card__title">GreenTree Inn</h3>
           </a>
           <p class="card__info-wrapper">
@@ -196,9 +197,7 @@
       </ul>
       <nav class="products__pagination pagination" aria-label="Пагинация">
         <ol class="pagination__list">
-          <li class="pagination__item"><a class="pagination__link pagination__link--current button"
-              aria-current="page">1</a>
-          </li>
+          <li class="pagination__item"><span class="pagination__link pagination__link--current button" aria-current="page">1</span></li>
           <li class="pagination__item"><a class="pagination__link button" href="#">2</a></li>
           <li class="pagination__item"><a class="pagination__link button" href="#">3</a></li>
           <li class="pagination__item"><a class="pagination__link button" href="#">4</a></li>
@@ -227,7 +226,7 @@
     </ul>
     <a class="footer__phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
     <a class="footer__link" href="https://htmlacademy.ru/">
-      <img class="footer__logo" src="#" alt="Логотип html academy">
+      <img class="footer__logo" src="#" alt="Логотип html academy" width="50" height="50">
     </a>
   </footer>
 </body>
