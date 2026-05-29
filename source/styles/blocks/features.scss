@@ -1,1 +1,26 @@
-/* features */
+.features {
+  background-color: $white;
+  color: $grey-700;
+}
+
+.features__slogan {
+  font-size: 36px;
+  line-height: 30px;
+  font-weight: 700;
+  color: $black;
+  text-transform: uppercase;
+}
+
+.features__description {
+  font-size: 22px;
+  line-height: 26px;
+}
+
+.features__item {
+  color: $grey-700;
+  background-color: $blue-300-12;
+}
+
+.features__item:nth-child(2) {
+  background-color: $white;
+}

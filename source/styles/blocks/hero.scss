@@ -1,1 +1,22 @@
-/* hero */
+.hero {
+  color: $black;
+  background-color: $white;
+}
+
+.hero__logo-wrapper {
+  background-image: url("../../images/background/index-background@1x.jpg");
+  background-color: #3f5e72;
+}
+
+.hero__slogan {
+  font-size: 30px;
+  line-height: 36px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.hero__text {
+  font-size: 22px;
+  line-height: 26px;
+  color: $grey-700;
+}

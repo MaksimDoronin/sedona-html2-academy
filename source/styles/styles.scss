@@ -8,12 +8,11 @@
 
 /* Общие */
 @import "./blocks/page.scss";
-
 /* Шапка */
 @import "./blocks/header.scss";
 @import "./blocks/logo.scss";
 @import "./blocks/navigation.scss";
-@import "./blocks/navigation-user.scss";
+@import "./blocks/button.scss";
 
 /* index.html — main */
 @import "./blocks/hero.scss";

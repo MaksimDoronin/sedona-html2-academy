@@ -1,1 +1,17 @@
-/* search */
+.search {
+  background-color: $white;
+  color: $grey-700;
+}
+
+.search__slogan {
+  font-size: 36px;
+  line-height: 30px;
+  font-weight: 700;
+  color: $black;
+  text-transform: uppercase;
+}
+
+.search__text {
+  font-size: 22px;
+  line-height: 26px;
+}
