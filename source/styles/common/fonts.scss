@@ -1,14 +1,2 @@
-@include font-face(
-  "PT Sans",
-  url("../../fonts/pt-sans/PT_Sans-Regular.woff2") format("woff2"),
-  url("../../fonts/pt-sans/PT_Sans-Regular.woff") format("woff"),
-  400,
-  normal
-);
-@include font-face(
-  "PT Sans",
-  url("../../fonts/pt-sans/PT_Sans-Bold.woff2") format("woff2"),
-  url("../../fonts/pt-sans/PT_Sans-Bold.woff") format("woff"),
-  700,
-  normal
-);
+@include font-face("PT Sans", "../../fonts/pt-sans/PT_Sans-Regular", 400);
+@include font-face("PT Sans", "../../fonts/pt-sans/PT_Sans-Bold", 700);
