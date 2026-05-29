@@ -47,8 +47,11 @@
   <main class="page__main">
     <section class="page__hero hero">
       <h1 class="visually-hidden">Сайт для бронирования гостиницы в городе Седона</h1>
-      <div class="hero__banner">
-        <img class="hero__logo" src="#" alt="Welcome to the gorgeous Sedona 'because the Grand Canyon sucks!" width="50" height="50">
+      <div class="hero__logo-wrapper">
+        <picture>
+          <source media="(min-width: 1200px)" width="458" height="352" srcset="images/logo/welcome.svg" type="image/svg+xml" >
+          <img class="hero__logo" width="458" height="352" src="images/logo/welcome.svg" alt="Welcome to the gorgeous Sedona 'because the Grand Canyon sucks!">
+        </picture>
       </div>
       <div class="hero__text-wrapper">
         <p class="hero__slogan">Седона — небольшой городок в Аризоне, заслуживающий большего!</p>

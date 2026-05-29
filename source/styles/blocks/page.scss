@@ -1,1 +1,8 @@
-/* Пустой комментарий */
+.page__body {
+  font-family: $primary-font;
+  font-size: 18px;
+  line-height: 21px;
+  font-weight: 400;
+  color: $grey-700;
+  background-color: $grey-100;
+}
