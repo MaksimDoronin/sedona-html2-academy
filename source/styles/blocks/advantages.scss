@@ -11,6 +11,7 @@
 .advantages__item:nth-child(7n + 3),
 .advantages__item:nth-child(7n) {
   background-color: $blue-300-20;
+  color: $grey-700;
 }
 
 .advantages__title {
