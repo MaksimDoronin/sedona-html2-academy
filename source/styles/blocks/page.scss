@@ -6,3 +6,11 @@
   color: $grey-700;
   background-color: $grey-100;
 }
+
+.page__catalog-hero {
+  background-image: url("../../images/background/filter@1x.jpg");
+  background-color: $blue-500;
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  color: $white;
+}
