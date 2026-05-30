@@ -1,6 +1,28 @@
 .subscribe {
+  background-color: $white;
+  color: $black;
+}
+
+.subscribe--index-page {
   background-image: url("../../images/background/subscribe@1x.jpg");
   background-color: $blue-500;
   background-repeat: no-repeat;
   color: $white;
+}
+
+.subscribe--index-page .subscribe__text {
+  color: $white;
+}
+
+.subscribe__intro {
+  font-size: 30px;
+  line-height: 36px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.subscribe__text {
+  font-size: 22px;
+  line-height: 26px;
+  color: $grey-700;
 }

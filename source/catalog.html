@@ -98,10 +98,22 @@
           </fieldset>
           <fieldset class="filter__group">
             <legend class="filter__title">Стоимость, ₽:</legend>
+            <div class="filter__price price-range">
+              <label class="price-range__field">
+                <input class="price-range__input" type="number" name="price-min">
+                <span class="price-range__caption">от</span>
+              </label>
+              <label class="price-range__field">
+                <input class="price-range__input" type="number" name="price-max">
+                <span class="price-range__caption">до</span>
+              </label>
+              <div class="price-range__slider">
+              </div>
+            </div>
           </fieldset>
           <div class="filter__actions">
-            <button class="filter__action button" type="submit">Применить</button>
-            <button class="filter__action button" type="reset">Сбросить</button>
+            <button class="filter__action button button--small button--secondary" type="submit">Применить</button>
+            <button class="filter__action button button--small button--transparent" type="reset">Сбросить</button>
           </div>
         </form>
       </section>
@@ -113,23 +125,23 @@
         <select class="sorting__dropdown" name="card-sorting" aria-label="Сортировка">
           <option value="cheap">Сначала дешёвые</option>
         </select>
+        <ul class="products__view-toggles view-toggles">
+          <li class="view-toggles__item">
+            <a class="view-toggles__link view-toggles__link--active button" href="catalog.html?view=tile"><span
+                class="visually-hidden">Показать в виде сетки</span></a>
+          </li>
+          <li class="view-toggles__item">
+            <a class="view-toggles__link button" href="catalog.html?view=card"><span class="visually-hidden">Показать в
+                виде
+                карточки</span></a>
+          </li>
+          <li class="view-toggles__item">
+            <a class="view-toggles__link button" href="catalog.html?view=list"><span class="visually-hidden">Показать в
+                виде
+                списка</span></a>
+          </li>
+        </ul>
       </div>
-      <ul class="products__view-toggles view-toggles">
-        <li class="view-toggles__item">
-          <a class="view-toggles__link view-toggles__link--active button" href="catalog.html?view=tile"><span
-              class="visually-hidden">Показать в виде сетки</span></a>
-        </li>
-        <li class="view-toggles__item">
-          <a class="view-toggles__link button" href="catalog.html?view=card"><span class="visually-hidden">Показать в
-              виде
-              карточки</span></a>
-        </li>
-        <li class="view-toggles__item">
-          <a class="view-toggles__link button" href="catalog.html?view=list"><span class="visually-hidden">Показать в
-              виде
-              списка</span></a>
-        </li>
-      </ul>
       <ul class="products__list">
         <li class="products__item card">
           <a class="card__link" href="#">
@@ -145,8 +157,8 @@
             <span class="card__price">От 4000 ₽</span>
           </p>
           <div class="card__actions">
-            <a class="card__button button" href="#">Подробнее</a>
-            <button class="card__button button" type="button">В избранное</button>
+            <a class="card__button button button--primary button--small" href="#">Подробнее</a>
+            <button class="card__button button button--secondary button--small" type="button">В избранное</button>
           </div>
           <p class="card__rating-wrapper">
             <span class="card__stars"></span>
@@ -167,8 +179,8 @@
             <span class="card__price">От 5000 ₽</span>
           </p>
           <div class="card__actions">
-            <a class="card__button button" href="#">Подробнее</a>
-            <button class="card__button button" type="button">В избранное</button>
+            <a class="card__button button button--primary button--small" href="#">Подробнее</a>
+            <button class="card__button button button--tertiary button--small" type="button">В избранном</button>
           </div>
           <p class="card__rating-wrapper">
             <span class="card__stars"></span>
@@ -189,8 +201,8 @@
             <span class="card__price">От 2500 ₽</span>
           </p>
           <div class="card__actions">
-            <a class="card__button button" href="#">Подробнее</a>
-            <button class="card__button button" type="button">В избранное</button>
+            <a class="card__button button button--primary button--small" href="#">Подробнее</a>
+            <button class="card__button button button--secondary button--small" type="button">В избранное</button>
           </div>
           <p class="card__rating-wrapper">
             <span class="card__stars"></span>
@@ -211,8 +223,8 @@
             <span class="card__price">От 1500 ₽</span>
           </p>
           <div class="card__actions">
-            <a class="card__button button" href="#">Подробнее</a>
-            <button class="card__button button" type="button">В избранное</button>
+            <a class="card__button button button--primary button--small" href="#">Подробнее</a>
+            <button class="card__button button button--secondary button--small" type="button">В избранное</button>
           </div>
           <p class="card__rating-wrapper">
             <span class="card__stars"></span>
@@ -223,15 +235,15 @@
       <nav class="products__pagination pagination" aria-label="Пагинация">
         <ol class="pagination__list">
           <li class="pagination__item"><span class="pagination__link pagination__link--current button" aria-current="page">1</span></li>
-          <li class="pagination__item"><a class="pagination__link button" href="#">2</a></li>
-          <li class="pagination__item"><a class="pagination__link button" href="#">3</a></li>
-          <li class="pagination__item"><a class="pagination__link button" href="#">4</a></li>
-          <li class="pagination__item"><span class="pagination__link button">...</span></li>
-          <li class="pagination__item"><a class="pagination__link button" href="#">10</a></li>
+          <li class="pagination__item"><a class="pagination__link button button--secondary button--big" href="#">2</a></li>
+          <li class="pagination__item"><a class="pagination__link button button--secondary button--big" href="#">3</a></li>
+          <li class="pagination__item"><a class="pagination__link button button--secondary button--big" href="#">4</a></li>
+          <li class="pagination__item"><span class="pagination__dots">...</span></li>
+          <li class="pagination__item"><a class="pagination__link button button--secondary button--big" href="#">10</a></li>
         </ol>
       </nav>
     </section>
-    <section class="page__subscribe subscribe subscribe--catalog-page">
+    <section class="page__subscribe subscribe">
       <h2 class="visually-hidden">Подписка</h2>
       <p class="subscribe__intro">Подпишитесь на рассылку</p>
       <p class="subscribe__text">Только полезная информация и никакого спама, честное бойскаутское!</p>

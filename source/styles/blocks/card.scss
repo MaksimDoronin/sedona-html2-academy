@@ -1,1 +1,22 @@
-/* card */
+.card__link {
+  text-decoration: none;
+}
+
+.card__title {
+  font-size: 24px;
+  line-height: 28px;
+  font-weight: 700;
+  color: $black;
+}
+
+.card__info-wrapper {
+  color: $grey-700;
+}
+
+.card__rating {
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: $grey-700;
+  background-color: $grey-100;
+}

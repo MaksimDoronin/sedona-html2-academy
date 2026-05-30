@@ -1,1 +1,9 @@
-/* pagination */
+.pagination__link--current {
+  background-color: $grey-100;
+  color: $black;
+}
+
+.pagination__dots {
+  font-size: 22px;
+  line-height: 26px;
+}

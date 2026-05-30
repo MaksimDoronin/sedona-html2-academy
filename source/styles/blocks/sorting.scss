@@ -1,1 +1,14 @@
-/* sorting */
+.sorting__text {
+  font-size: 30px;
+  line-height: 36px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.sorting__dropdown {
+  font-family: $primary-font;
+  font-size: 18px;
+  line-height: 21px;
+  background-color: $white;
+  color: $grey-700;
+}
