@@ -1,17 +1,23 @@
-.advantages {
-  color: $black;
-  background-color: $blue-300-12;
-}
-
-.advantages__item--wide {
-  color: $white;
+.advantages__item {
   background-color: $blue-300;
+  color: $white;
 }
 
-.advantages__item:nth-child(7n + 3),
-.advantages__item:nth-child(7n) {
+.advantages__item--square,
+.advantages__item--tourists {
+  background-color: $blue-300-12;
+  color: $grey-700;
+}
+
+.advantages__item--road {
   background-color: $blue-300-20;
   color: $grey-700;
+}
+
+.advantages__item--square .advantages__title,
+.advantages__item--tourists .advantages__title,
+.advantages__item--road .advantages__title {
+  color: $black;
 }
 
 .advantages__title {
